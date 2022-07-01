@@ -20,11 +20,6 @@ public:
                     arr.push_back(-1);
                     break;
                 }
-                // else if(nums2[j] < max && mark==1){
-                //     cout<<"Push"<<max<<endl;
-                //     arr.push_back(max);
-                //     break;
-                // }
                 
             }
             if(arr.size() != i+1){
