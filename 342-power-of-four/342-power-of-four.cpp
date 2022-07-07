@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool isPowerOfFour(int n) {
-        // bool isPow=false;
         if(n == 1){
             return true;
         }
