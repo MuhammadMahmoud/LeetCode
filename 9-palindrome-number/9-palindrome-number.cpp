@@ -6,7 +6,6 @@ public:
         }
         vector<int> arr;
         unsigned int temp=x>=0 ? x:x*-1 ;
-        // cout<<temp<<endl;
         while(temp){
             arr.push_back(temp%10);
             temp/=10;
