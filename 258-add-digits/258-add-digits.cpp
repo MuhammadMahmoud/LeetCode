@@ -8,9 +8,8 @@ public:
         else if(num/10 ==0){
             return num;
         }
-        int sum=0,count=0;
+        int sum=0;
         int temp;
-        
         while(num/10 != 0){
             temp=num;
             sum=0;
