@@ -1,6 +1,5 @@
 class Solution {
 public:
-    #define toggle_bit(num,bit_num) num^=(1<<bit_num)
     int minBitFlips(int start, int goal) {
         int count=0;
         int temp=start;
