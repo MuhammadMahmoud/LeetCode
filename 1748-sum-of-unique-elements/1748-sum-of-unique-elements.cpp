@@ -7,11 +7,12 @@ public:
             s[nums[i]]++;
             
         }
-        for(int i=0;i<s.size();i++){
-            if(s[i] == 1){
-                sum+=i;
+        for(pair<int,int> n:s){
+            if(n.second == 1){
+                sum+=n.first;
             }
         }
+        
         return sum;
     }
 };
