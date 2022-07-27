@@ -1,14 +1,14 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        auto f=s.begin(),l=s.begin();
-        for(auto i=s.begin();i!=s.end();i++,l++){
+        auto f=s.begin(),i=s.begin();
+        for(;i!=s.end();i++){
             if( *i == ' '){
-                reverse(f,l);
+                reverse(f,i);
                 f=i+1;
             }
         }
-        reverse(f,l);
+        reverse(f,i);
         return s;
     }
 };
