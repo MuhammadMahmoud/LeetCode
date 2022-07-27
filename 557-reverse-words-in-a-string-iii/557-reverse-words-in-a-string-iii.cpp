@@ -7,8 +7,10 @@ public:
                 reverse(f,i);
                 f=i+1;
             }
+            else if(i+1 == s.end()){
+                reverse(f,s.end());
+            }
         }
-        reverse(f,i);
         return s;
     }
 };
