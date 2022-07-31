@@ -29,9 +29,6 @@ public:
             
             head=head->next;
         }
-        temp=res;
-        res=res->next;
-        delete temp;
-        return res;
+        return res->next;
     }
 };
