@@ -11,10 +11,7 @@
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
-        ListNode *temp=head;
-        ListNode *pre=temp;
-        // 1->2->6 3 4 5 6
-        // 1  2  6
+        ListNode *temp=head ,*pre=temp;
         while(temp){
             if(temp == head && head->val == val) head=head->next;
             else if(temp->val == val && temp->next){
@@ -28,9 +25,7 @@ public:
                 continue;
                 
             }
-            // cout<<"prev "<<pre->val<<" "<<endl;
             pre=temp;
-            // cout<<"current "<<temp->val<<" "<<endl;
             temp=temp->next;
         }
         return head;
